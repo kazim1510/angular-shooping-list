@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import {Component} from '@angular/core';
 
 @Component({
   selector: 'app-root',
@@ -7,4 +7,11 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'shopping-recipes';
+  loadedFeature = 'recipes';
+  show = true;
+  value = 100;
+
+  onNavigate(feature: string) {
+    this.loadedFeature = feature;
+  }
 }
