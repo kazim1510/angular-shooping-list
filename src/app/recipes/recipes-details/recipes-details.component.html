@@ -16,8 +16,8 @@
       </button>
       <div class="dropdown-menu">
         <a class="dropdown-item" (click)="onAddToShoppingList()" style="cursor: pointer">Add Ingredient to Shopping list</a>
-        <a class="dropdown-item" style="cursor: pointer">Edit Recipe</a>
-        <a class="dropdown-item" style="cursor: pointer">Delete Recipe</a>
+        <a class="dropdown-item" (click)="editRecipe()" style="cursor: pointer">Edit Recipe</a>
+        <a class="dropdown-item" (click)="deleteRecipe()" style="cursor: pointer">Delete Recipe</a>
       </div>
     </div>
   </div>
